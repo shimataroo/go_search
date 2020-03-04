@@ -1,7 +1,6 @@
 package gosearch
 
 import (
-	"fmt"
 	"reflect"
 	"strings"
 	"testing"
@@ -43,8 +42,6 @@ func TestUpdate(t *testing.T) {
 		TotalDocsCount: 3,
 	}
 
-	fmt.Println(actual)
-	fmt.Println(expected)
 	if !reflect.DeepEqual(actual, expected) {
 		t.Error("index error\n")
 	}
